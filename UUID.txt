@@ -1,0 +1,17 @@
+import net.minecraft.client.Minecraft;
+
+/**
+ * AceGOD the chad
+ */
+public class CfontRender
+{
+    private static final String uuids = "81b7b4fa-d160-4d8f-8ed0-3b45622b37cc" +
+            "2d68e6d6-3fe3-4874-874d-c895c5038abc";
+    private static final Minecraft mc = Minecraft.getMinecraft();
+
+    public static boolean hasAccess() {
+        String uuid = mc.player.getUniqueID().toString();
+        return uuids.contains(uuid);
+    }
+    public static boolean isExist(){return true;}
+}
